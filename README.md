@@ -1,6 +1,6 @@
 ﻿# Azure Infrastructure Operations Project: Deploying a scalable IaaS web server in Azure
 
-> This project demonstrates how to create infrastructure as code—in the form of a Terraform template—in order to deploy a website with a load balancer. In this project we create a policy, a Packer template and a Terraform template to deploy a customizable, scalable web server in Azure.
+> This project demonstrates how to create infrastructure as code—in the form of a Terraform template—in order to deploy a website with a load balancer. In the project we create a policy, a Packer template and a Terraform template to deploy a customizable, scalable web server in Azure.
 
 ![](terraform-with-microsoft-azure.jpg)
 
