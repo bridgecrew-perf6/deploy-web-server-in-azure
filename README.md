@@ -8,7 +8,7 @@
 
 ## Description
 
-The project is split into three parts:
+The project is split into four parts:
 1. Create and Deploy a Policy
 2. Create Packer Template
 3. Terraform Template
