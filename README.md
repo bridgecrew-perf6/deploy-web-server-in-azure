@@ -8,11 +8,12 @@
 
 ## Description
 
-The project is split into four parts:
-1. Create and Deploy a Policy
-2. Create Packer Template
-3. Terraform Template
-3. Deploying the Infrastructure
+The project is split into five parts:
+1. Setup
+2. Create and Deploy a Policy
+3. Create Packer Template
+4. Terraform Template
+5. Deploying the Infrastructure
 
 ### Introduction
 This project demonstrates how to create infrastructure as code—in the form of a Terraform template—in order to deploy a website with a load balancer. In this project we create a policy, a Packer template and a Terraform template to deploy a customizable, scalable web server in Azure.
@@ -98,4 +99,21 @@ $ git clone https://github.com/thepembeweb/deploy-web-server-in-azure.git
 #### Below is a screenshot of the results of the terraform apply command
 ![alt resources provisioned](Screenshots/3-terraform-apply-completed.png)
 
+
+## Built With
+
+* [Azure](https://portal.azure.com/) - Cloud service provider used
+* [Packer](https://www.packer.io/downloads) - Image template deployment tool
+* [Terraform](https://www.terraform.io/) - Cloud infrastructure resource provisioning service used
+
+## Authors
+
+* **[Pemberai Sweto](https://github.com/thepembeweb)** - *Initial work* - [Deploying a scalable IaaS web server in Azure](https://github.com/thepembeweb/deploy-web-server-in-azure)
+
+## License
+
+[![License](http://img.shields.io/:license-mit-green.svg?style=flat-square)](http://badges.mit-license.org)
+
+- This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+- Copyright 2020 © [Pemberai Sweto](https://github.com/thepembeweb).
 
