@@ -91,14 +91,41 @@ $ git clone https://github.com/thepembeweb/deploy-web-server-in-azure.git
     
 ### Output
 #### Below is a screenshot of what to expect after deploying the policy to azure.
-![alt packer image in azure](Screenshots/1-deploy-a-policy.png)
+![alt deploy a policy image in azure](Screenshots/1-deploy-a-policy.png)
 
 #### Below is a screenshot of what to expect after running the building and deploying the packer image to azure.
 ![alt packer image in azure](Screenshots/2-packer-image.png)
 
 #### Below is a screenshot of the results of the terraform apply command
-![alt resources provisioned](Screenshots/3-terraform-apply-completed.png)
+![alt terraform apply completed image](Screenshots/3-terraform-apply-completed.png)
 
+    ```
+    Apply complete! Resources: 16 added, 0 changed, 0 destroyed.
+
+    Outputs:
+
+    image_id = /subscriptions/<id>/resourceGroups/udacityWebGroup/providers/Microsoft.Compute/images/webserverPackerImage
+    lb_name = udacityWebResources-lb
+    ```
+
+#### Below is a screenshot of the results of the terraform show command
+![alt terraform apply completed image](Screenshots/4-terraform-show.png)
+
+    ```
+    # azurerm_availability_set.avset:
+    resource "azurerm_availability_set" "avset" {
+        id                           = "/subscriptions/1af0c382-25a2-4906-991e-a27b4379f66e/resourceGroups/udacityWebResources/providers/Microsoft.Compute/availabilitySets/avset"
+        location                     = "eastus"
+        managed                      = true
+        name                         = "avset"
+        platform_fault_domain_count  = 2
+        platform_update_domain_count = 2
+        resource_group_name          = "udacityWebResources"
+        tags                         = {
+            "webserver-env" = "udacityWeb"
+        }
+    }
+    ```
 
 ## Built With
 
